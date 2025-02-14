@@ -1,14 +1,10 @@
-type CardProps = {
-  title: string;
-  classParam?: string;
-  details?: string;
-};
+import { CardProps } from "../../../Types";
 
-const Card = ({ classParam, ...props }: CardProps) => {
+const CardGrid = ({ classParam = "col-span-1", ...props }: CardProps) => {
   return (
     <div
-      className={`${classParam} flex flex-col p-5
-       bg-slate-700 rounded-md drop-shadow-lg`}
+      className={`$flex flex-col p-5
+       bg-slate-700 rounded-md drop-shadow-lg ${classParam}`}
     >
       {/* card header */}
       <div>
@@ -27,4 +23,4 @@ const Card = ({ classParam, ...props }: CardProps) => {
   );
 };
 
-export default Card;
+export default CardGrid;

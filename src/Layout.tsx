@@ -8,7 +8,7 @@ import Footer from "./components/Footer/Footer";
 const Layout = ({ children }: { children: ReactNode }) => {
   return (
     <div
-      className="w-full h-dvh flex flex-col 
+      className="w-full h-svh flex flex-col 
     bg-slate-900 text-white font-roboto"
     >
       {/* header here */}
@@ -24,8 +24,6 @@ const Layout = ({ children }: { children: ReactNode }) => {
           <RightSideBar />
         </div>
       </div>
-      {/* footer here */}
-      <Footer />
     </div>
   );
 };
