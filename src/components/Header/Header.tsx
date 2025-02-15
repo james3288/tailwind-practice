@@ -1,24 +1,17 @@
-import { HambumgerMenuIcon } from "../icons/SvgComponents";
+import HeaderLogo from "./HeaderLogo/HeaderLogo";
 
 const Header = () => {
   return (
-    <header
-      className="h-[5rem] flex flex-row items-center 
-    justify-between p-3"
+    <section
+      className="flex w-full justify-between h-[5rem] 
+  border-b-2 border-slate-800 relative"
     >
-      {/* logo here */}
-      <div>Logo here</div>
-      {/* menu here */}
-      <div className="hidden md:flex flex-row p-3 space-x-3">
-        <a href="">Home</a>
-        <a href="">Home</a>
-        <a href="">Home</a>
-        <a href="">Home</a>
-      </div>
-      <div className="block md:hidden">
-        <HambumgerMenuIcon />
-      </div>
-    </header>
+      {/* logo */}
+      <HeaderLogo />
+      {/* end logo */}
+
+      {/* navigation */}
+    </section>
   );
 };
 

@@ -20,5 +20,9 @@ export const menuList = () => {
       title: "CONTACT ME",
       link: "",
     },
+    {
+      title: "CONTACT ME",
+      link: "",
+    },
   ];
 };
