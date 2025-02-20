@@ -6,3 +6,33 @@
 :root {
   --my-flex: none;
 }
+
+/* width */
+::-webkit-scrollbar {
+  width: 1px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: rgb(30, 30, 59);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 5px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+.scrollbar-hide {
+  -ms-overflow-style: none; /* For Internet Explorer and Edge */
+  scrollbar-width: none; /* For Firefox */
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none; /* For Chrome, Safari, and Opera */
+}
