@@ -1,6 +1,7 @@
 import { ReactTyped } from "react-typed";
 import portrait from "./../../assets/img/portrait.png";
 import { motion } from "framer-motion";
+import Reordering from "../../components/Animation/ReorderAnimation";
 
 const HeroPage = () => {
   return (
@@ -9,7 +10,8 @@ const HeroPage = () => {
       <div
         className="flex flex-col justify-center
     items-center gap-4 mt-8 relative
-    md:items-start md:flex-row md:justify-items-start 
+    md:items-start md:flex-row md:justify-items-start
+    md:pt-20 
     "
       >
         {/* image */}
@@ -29,13 +31,13 @@ const HeroPage = () => {
         {/* caption */}
         <div
           className="flex flex-col md:justify-center items-center 
-      md:items-center md:h-[310px]"
+      md:items-center md:h-[310px] md:pt-8"
         >
           <h1 className="text-4xl text-blue-300">
             Hi, I'm a{" "}
             <span className="text-slate-300 font-bold text-4xl sm:5xl">
               <ReactTyped
-                strings={["Web Developer", "Designer", "Singer"]}
+                strings={["Web Developer", "Artist", "Singer"]}
                 typeSpeed={80}
                 backSpeed={40}
                 loop
