@@ -1,7 +1,6 @@
 import { ReactTyped } from "react-typed";
 import portrait from "./../../assets/img/portrait.png";
 import { motion } from "framer-motion";
-import Reordering from "../../components/Animation/ReorderAnimation";
 
 const HeroPage = () => {
   return (
